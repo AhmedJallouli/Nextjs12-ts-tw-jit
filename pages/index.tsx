@@ -33,7 +33,7 @@ export default function Home() {
             {auth ? 'You are authenticated' : 'You are not authenticated'}
           </code>
         </p>
-        <p className="mt-3 bg-blue-100 text-2xl  hover:bg-red-500 md:bg-amber-200 xl:bg-green-500">
+        <p className="mt-3 bg-blue-100 text-2xl hover:bg-red-500 md:bg-amber-200 xl:bg-green-500">
           <button className="btn" onClick={authupdate}>
             You can Authenticate here!
           </button>
