@@ -1,7 +1,7 @@
 import { createContext, useContext, useState } from 'react'
 
 const AuthContext = createContext(false)
-const AuthUpdateContext = createContext(() => null)
+const AuthUpdateContext = createContext(null)
 
 export const useAuthContext = () => {
   return useContext(AuthContext)
@@ -13,7 +13,7 @@ export const useAuthUpdateContext = () => {
 
 export const AuthProvider: React.FC = ({ children }) => {
   const [isAuth, setIsAuth] = useState(false)
-  function toggleIsAuth() {
+  const toggleIsAuth = () => {
     setIsAuth((prevIsAuth) => !prevIsAuth)
   }
 
