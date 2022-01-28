@@ -1,6 +1,9 @@
+import { useAuthContext, useAuthUpdateContext } from '@context/AuthContext'
 import Head from 'next/head'
 
 export default function Home() {
+  const auth = useAuthContext()
+  const authupdate = useAuthUpdateContext()
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
       <Head>
@@ -21,6 +24,16 @@ export default function Home() {
           <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
             pages/index.tsx
           </code>
+        </p>
+
+        <p className="mt-3 text-2xl">
+          Context values are{' '}
+          <code className="md rounded-md p-3 font-mono text-lg">
+            {auth ? 'You are authenticated' : 'You are not authenticated'}
+          </code>
+        </p>
+        <p className="mt-3 bg-blue-100 text-2xl  hover:bg-red-500 md:bg-amber-200 xl:bg-green-500">
+          <button onClick={authupdate}>You can Authenticate here!</button>
         </p>
 
         <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
