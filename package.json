@@ -4,7 +4,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build-css": "tailwindcss build -i src/styles/globals.css -o public/styles.css"
   },
   "dependencies": {
     "next": "latest",

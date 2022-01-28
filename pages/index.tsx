@@ -1,5 +1,6 @@
 import { useAuthContext, useAuthUpdateContext } from '@context/AuthContext'
 import Head from 'next/head'
+import Image from 'next/image'
 
 export default function Home() {
   const auth = useAuthContext()
@@ -33,7 +34,9 @@ export default function Home() {
           </code>
         </p>
         <p className="mt-3 bg-blue-100 text-2xl  hover:bg-red-500 md:bg-amber-200 xl:bg-green-500">
-          <button onClick={authupdate}>You can Authenticate here!</button>
+          <button className="btn" onClick={authupdate}>
+            You can Authenticate here!
+          </button>
         </p>
 
         <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
@@ -87,7 +90,13 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="ml-2 h-4" />
+          <Image
+            src="/vercel.svg"
+            alt="Vercel Logo"
+            width={5}
+            height={5}
+            className="ml-2 h-4"
+          />
         </a>
       </footer>
     </div>
