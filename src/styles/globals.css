@@ -5,3 +5,15 @@
 .btn {
   @apply cursor-pointer rounded-full py-2 px-3 text-xs font-bold uppercase tracking-wider;
 }
+.label {
+  @apply block pt-2 pb-1 text-sm font-bold text-gray-700;
+}
+.field {
+  @apply block w-full appearance-none rounded border border-gray-300 bg-gray-200 py-2 px-4 text-gray-700 focus:outline-none;
+}
+.button {
+  @apply mt-8 w-full rounded bg-gray-700 py-2 px-4 font-bold text-white hover:bg-gray-600;
+}
+.errorMsg {
+  @apply text-sm text-red-500;
+}

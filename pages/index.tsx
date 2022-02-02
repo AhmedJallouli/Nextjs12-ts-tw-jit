@@ -1,4 +1,4 @@
-import Documentation from '@components/dashboard/Documentation'
+import { Documentation } from '@components/dashboard/Dashboard'
 import MainLayout from 'layouts/MainLayout'
 
 export default function Home() {
@@ -7,7 +7,6 @@ export default function Home() {
       <MainLayout>
         <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
           <Documentation header={'Documentation body'} body={'qdssq'} />
-
           <Documentation header={'Learn body'} body={'qdssq'} />
           <Documentation header={'Learn body'} body={'qdssq'} />
           <Documentation header={'Learn body'} body={'qdssq'} />

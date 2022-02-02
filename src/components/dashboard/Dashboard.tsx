@@ -5,7 +5,7 @@ type DocumentationInterface = {
   body: String
 }
 
-export default function Documentation(props: DocumentationInterface) {
+export function Documentation(props: DocumentationInterface) {
   return (
     <a
       href="https://nextjs.org/docs"
