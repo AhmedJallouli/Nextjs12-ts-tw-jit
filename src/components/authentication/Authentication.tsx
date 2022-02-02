@@ -20,25 +20,25 @@ export const RegisterForm = () => (
     }}
   >
     <Form>
-      <label className="label" htmlFor="email">
+      <label className="label" htmlFor="Email">
         Email
       </label>
       <Field className="field" id="email" name="email" />
       <ErrorMessage component="div" className="errorMsg" name="email" />
 
-      <label className="label" htmlFor="name">
+      <label className="label" htmlFor="Name">
         Name
       </label>
       <Field className="field" id="name" name="name" />
       <ErrorMessage component="div" className="errorMsg" name="name" />
 
-      <label className="label" htmlFor="age">
+      <label className="label" htmlFor="Age">
         Age
       </label>
       <Field className="field" id="age" name="age" />
       <ErrorMessage component="div" className="errorMsg" name="age" />
 
-      <label className="label" htmlFor="password">
+      <label className="label" htmlFor="Password">
         Password
       </label>
       <Field className="field" id="password" name="password" />
@@ -67,12 +67,12 @@ export const LoginForm = () => (
     }}
   >
     <Form>
-      <label className="label" htmlFor="email">
+      <label className="label" htmlFor="Email">
         Email
       </label>
       <Field className="field" id="email" name="email" />
       <ErrorMessage component="div" className="errorMsg" name="email" />
-      <label className="label" htmlFor="password">
+      <label className="label" htmlFor="Password">
         Password
       </label>
       <Field className="field" id="password" name="password" />
