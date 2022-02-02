@@ -4,6 +4,8 @@ import * as yup from 'yup'
 const registerSchema = yup.object({
   email: yup.string().email().required(),
   password: yup.string().required().min(3),
+  name: yup.string().required().min(3),
+  age: yup.number().required(),
 })
 
 export const RegisterForm = () => (
@@ -61,25 +63,6 @@ export const LoginForm = () => (
     }}
     validationSchema={loginSchema}
     onSubmit={async (values) => {
-      const loginFormData = new FormData()
-
-      loginFormData.append('username', values.email)
-      loginFormData.append('password', values.password)
-      fetch('http://localhost:8080/', {
-        method: 'POST',
-        mode: 'cors',
-        body: loginFormData, // body data type must match "Content-Type" header
-      })
-      // try {
-      //   const response = await fetch({
-      //     method: 'post',
-      //     url: '/api/login',
-      //     data: values,
-      //     // headers: { 'Content-Type': 'multipart/form-data' },
-      //   })
-      // } catch (error) {
-      //   console.log(error)
-      // }
       alert(JSON.stringify(values, null, 2))
     }}
   >
