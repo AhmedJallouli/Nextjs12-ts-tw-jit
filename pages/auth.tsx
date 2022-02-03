@@ -21,47 +21,38 @@ export default function Auth() {
                 </li>
               </ul>
               <div className={`${tab == 1 ? 'block' : 'hidden'}`}>
-                <Login />
+                <div className="mt-4 flex items-center justify-between">
+                  <span className="w-1/5 border-b border-red-700 lg:w-1/4"></span>
+                  <a
+                    href="#"
+                    className="text-center text-xs uppercase text-gray-500"
+                  >
+                    Login
+                  </a>
+                  <span className="w-1/5 border-b border-red-700 lg:w-1/4"></span>
+                </div>
+                <div>
+                  <LoginForm />
+                </div>
               </div>
               <div className={`${tab == 2 ? 'block' : 'hidden'}`}>
-                <Register />
+                <div className="mt-4 flex items-center justify-between">
+                  <span className="w-1/5 border-b border-red-700 lg:w-1/4"></span>
+                  <a
+                    href="#"
+                    className="text-center text-xs uppercase text-gray-500"
+                  >
+                    Register
+                  </a>
+                  <span className="w-1/5 border-b border-red-700 lg:w-1/4"></span>
+                </div>
+                <div>
+                  <RegisterForm />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  )
-}
-
-function Login() {
-  return (
-    <div>
-      <div className="mt-4 flex items-center justify-between">
-        <span className="w-1/5 border-b border-red-700 lg:w-1/4"></span>
-        <a href="#" className="text-center text-xs uppercase text-gray-500">
-          Login
-        </a>
-        <span className="w-1/5 border-b border-red-700 lg:w-1/4"></span>
-      </div>
-      <div>
-        <LoginForm />
-      </div>
-    </div>
-  )
-}
-function Register() {
-  return (
-    <div>
-      <div className="mt-4 flex items-center justify-between">
-        <span className="w-1/5 border-b border-red-700 lg:w-1/4"></span>
-        <a href="#" className="text-center text-xs uppercase text-gray-500">
-          Register
-        </a>
-        <span className="w-1/5 border-b border-red-700 lg:w-1/4"></span>
-      </div>
-      <div>
-        <RegisterForm />
       </div>
     </div>
   )
